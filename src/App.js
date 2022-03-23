@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Home from "./pages/Home";
 
-function App() {
+const App = () => {
+  const [scrollPosition, setScrollPosition] = useState([]);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    if (position === 0) {
+      setScrollPosition([]);
+    } else {
+      setScrollPosition((prevState) => [...prevState, position]);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        {/* {scrollPosition[scrollPosition.length - 1] <
+          scrollPosition[scrollPosition.length - 2] ||
+        scrollPosition[scrollPosition.length - 1] ===
+          scrollPosition[scrollPosition.length - 2] ? (
+          <Navigation />
+        ) : null} */}
+        {/* <Navigation /> */}
+
+        {/* <div style={{ height: "93.5px" }}></div> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
