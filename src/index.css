@@ -72,6 +72,7 @@ html {
   margin: 14px 0px;
 }
 
+
 .LandingForm {
   margin: 30px 0px;
 }
@@ -142,7 +143,7 @@ svg.arrow {
   width: 40px;
   height: 80px;
   margin-top: -16px;
-  transition: width .5s ease;
+  transition: width 0.5s ease;
   overflow: visible;
   cursor: pointer;
   color: #fff;
@@ -234,7 +235,7 @@ svg.circle textPath {
   }
 }
 
-.fullHeight{
+.fullHeight {
   height: calc(100vh - 90px);
 }
 
@@ -246,57 +247,51 @@ svg.circle textPath {
   border-radius: 2px;
 }
 
-
 .tiles:nth-child(1):hover {
   background-image: url("../src/assets/works/4.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .tiles:nth-child(2):hover {
   background-image: url("../src/assets/works/5.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .tiles:nth-child(3):hover {
   background-image: url("../src/assets/works/3.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .tiles:nth-child(4):hover {
   background-image: url("../src/assets/works/6.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .tiles:nth-child(5):hover {
   background-image: url("../src/assets/works/1.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 .tiles:nth-child(6):hover {
   background-image: url("../src/assets/works/2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .tiles:nth-child(1) {
   background-image: url("../src/assets/1.png");
-} 
+}
 
 .tiles:nth-child(2) {
   background-image: url("../src/assets/3.png");
@@ -327,7 +322,6 @@ svg.circle textPath {
 .servicesList::-webkit-scrollbar {
   width: 0px;
 }
-
 
 @media (min-width: 640px) {
   .hero-text {
@@ -360,7 +354,7 @@ svg.circle textPath {
     width: 80px;
     height: 80px;
     margin-top: -16px;
-    transition: width .5s ease;
+    transition: width 0.5s ease;
     overflow: visible;
     cursor: pointer;
   }

@@ -7,7 +7,6 @@ import parker from "../assets/parkerShort.png";
 import hm from "../assets/hm.png";
 import hmShort from "../assets/hmShort.png";
 import SwiperCore, { Navigation } from "swiper";
-import { Mousewheel, Pagination } from "swiper";
 
 SwiperCore.use([Navigation]);
 const Slide = () => {
@@ -41,7 +40,8 @@ const Slide = () => {
 
   return (
     <>
-      <Swiper
+     
+      {/* <Swiper
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         slidesPerView={"auto"}
         spaceBetween={0}
@@ -147,7 +147,7 @@ const Slide = () => {
         <SwiperSlide>
           <img src={sazShort} alt="Saz" width={"100%"} />
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
     </>
   );
 };

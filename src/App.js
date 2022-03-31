@@ -23,15 +23,13 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        {/* {scrollPosition[scrollPosition.length - 1] <
+        {scrollPosition[scrollPosition.length - 1] <
           scrollPosition[scrollPosition.length - 2] ||
         scrollPosition[scrollPosition.length - 1] ===
           scrollPosition[scrollPosition.length - 2] ? (
           <Navigation />
-        ) : null} */}
+        ) : null}
         {/* <Navigation /> */}
-
-        {/* <div style={{ height: "93.5px" }}></div> */}
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

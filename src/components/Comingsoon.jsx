@@ -14,7 +14,7 @@ const Comingsoon = () => {
       />
 
       <h3 className="text-4xl lg:text-5xl text-center pt-2 md:pt-5 mx-3 mt-5 lg:w-3/6">
-        Bringing services that helps in building the brands of the future.
+      We create the new walk-in experience, online.
       </h3>
       <Marquee
         style={{ width: "200%" }}
