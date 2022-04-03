@@ -90,7 +90,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="slide-marquee">
+      <div className="slide-marquee px-6 md:px-10 h-3/6">
         <Marquee
           className="text-base md:text-xl lg:text-2xl xl:text-2xl pb-2 items-start"
           gradient={false}
@@ -104,8 +104,9 @@ const Home = () => {
           FEATURED • FEATURED • FEATURED •{" "}
         </Marquee>
         <Slide />
+        
       </div>
-      <div className="my-20">
+      <div className="my-8">
       <Services />
       </div>
       <div className=" flex flex-row items-center md:gap-x-10 justify-start md:justify-between md:items-end mx-6 md:mx-10 mt-24 flex-wrap">
