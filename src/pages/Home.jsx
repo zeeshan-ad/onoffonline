@@ -25,6 +25,7 @@ import Slide from "../components/Slide";
 import Services from "../components/Services";
 import ooo from "../assets/ooo_logo.png";
 import Comingsoon from "../components/Comingsoon";
+import FeaturedWork from "../components/FeaturedWork";
 
 const Home = () => {
   const { height, width } = useWindowDimensions();
@@ -51,9 +52,9 @@ const Home = () => {
   const [Note, setNote] = useState(true);
 
   return (
-     <div className="Wrapper flex flex-col lg:pt-10">
-    
-       {Note && <Notes setNote={setNote} Note={Note} />}
+    <div className="Wrapper flex flex-col lg:pt-10">
+      {Note && <Notes setNote={setNote} Note={Note} />}
+      
       <div className="hero flex flex-col justify-center mb-0 px-6 md:px-10 pt-20 pb-14">
         <div className="">
           <h1 className="hero-text">We design and build</h1>
@@ -90,6 +91,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className="slide-marquee px-6 md:px-10 h-3/6">
         <Marquee
           className="text-base md:text-xl lg:text-2xl xl:text-2xl pb-2 items-start"
@@ -103,11 +105,11 @@ const Home = () => {
           • FEATURED • FEATURED • FEATURED • FEATURED • FEATURED • FEATURED •
           FEATURED • FEATURED • FEATURED •{" "}
         </Marquee>
-        <Slide />
-        
+        <FeaturedWork/>
+        {/* <Slide /> */}
       </div>
       <div className="my-8">
-      <Services />
+        <Services />
       </div>
       <div className=" flex flex-row items-center md:gap-x-10 justify-start md:justify-between md:items-end mx-6 md:mx-10 mt-24 flex-wrap">
         <div className="flex flex-col">
@@ -303,7 +305,7 @@ const Home = () => {
         <p className="cursor-pointer">Facebook</p>
         <p className="cursor-pointer">Twitter</p>
         <p className="cursor-pointer">LinkedIn</p>
-      </div> 
+      </div>
     </div>
   );
 };
