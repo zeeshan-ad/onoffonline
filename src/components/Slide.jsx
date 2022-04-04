@@ -41,7 +41,7 @@ const Slide = () => {
   return (
     <>
      
-      {/* <Swiper
+      <Swiper
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         slidesPerView={"auto"}
         spaceBetween={0}
@@ -51,8 +51,8 @@ const Slide = () => {
         navigation={true}
         className="mySwiper"
       >
-        <div className="absolute top-0 bottom-0 md:flex flex-row justify-between z-30 xl:px-20 md:mx-14 hidden">
-          <div className="flex flex-col justify-center w-4/6 h-5/5">
+        <div className="absolute top-40 lg:top-52 bottom-0 md:flex flex-row z-30 xl:px-20 md:mx-14 hidden">
+          <div className="flex flex-col justify-center w-6/6 h-5/5">
             <p className="text-white text-xs pb-2 lg:text-base uppercase">
               0{ActiveIndex + 1}&nbsp;|&nbsp;
               {ActiveIndex === 0
@@ -76,7 +76,7 @@ const Slide = () => {
                 : ActiveIndex === 2 && slideData[2].para}
             </p>
           </div>
-          <div className="flex flex-col md:mt-40 lg:mt-72 justify-center w-2/6 h-5/5">
+          {/* <div className="flex flex-col md:mt-40 lg:mt-72 justify-center w-2/6 h-5/5">
             <div className="flex flex-row md:justify-start md:-mb-5 lg:-mb-10 -ml-5 z-10">
               <p className="md:text-xs lg:text-base text-white whitespace-nowrap pt-5 lg:pt-4">
                 NEXT UP
@@ -100,7 +100,7 @@ const Slide = () => {
                 ? slideData[1].imageText
                 : ActiveIndex === 2 && slideData[2].imageText}
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-row mt-0 justify-between pt-2 md:hidden">
           <p className="text-xs font-medium">
@@ -147,7 +147,7 @@ const Slide = () => {
         <SwiperSlide>
           <img src={sazShort} alt="Saz" width={"100%"} />
         </SwiperSlide>
-      </Swiper> */}
+      </Swiper>
     </>
   );
 };
