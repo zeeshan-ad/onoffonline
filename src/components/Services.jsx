@@ -30,13 +30,13 @@ const Services = () => {
         <h1 className="-rotate-90 -mt-10">u</h1>
         <h1 className="-rotate-90 -mt-10">O</h1>
       </div>
-      <div className="servicesList w-5/6 ml-10 overflow-y-scroll flex flex-row justify-center flex-wrap gap-4">
-        <div className="p-5 pb-5 bg-black text-white w-52 h-64">
+      <div className="servicesList w-5/6 ml-10 overflow-y-scroll flex flex-row justify-center flex-wrap gap-4 ">
+        <div className="p-7 pb-5 bg-black text-white w-52 h-64">
           <div className="flex flex-row justify-between">
-            <p className="text-lg font-semibold -mt-3 w-36 mb-4 pt-3 leading-5 uppercase">
+            <p className="text-lg font-semibold -mt-3 w-36 mb-4 pt-2 leading-5 uppercase">
               Social media marketing
             </p>
-            <p className="text-right">/01</p>
+            <p className="text-right ">/01</p>
           </div>
           <img src={social} alt="Social media marketing" width={150} />
         </div>

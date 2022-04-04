@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState([]);
@@ -29,9 +30,10 @@ const App = () => {
           scrollPosition[scrollPosition.length - 2] ? (
           <Navigation />
         ) : null}
-        {/* <Navigation /> */}
+        <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
