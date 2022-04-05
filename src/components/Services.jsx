@@ -15,7 +15,7 @@ const Services = () => {
     <div
       className="px-6 md:px-10 flex flex-col justify-between"
     >
-      {/* <div className="text-8xl w-1/6 self-center">
+      <div className="text-8xl w-1/6 self-center">
         <h1 className="-rotate-90">s</h1>
         <h1 className="-rotate-90 -mt-10">e</h1>
         <h1 className="-rotate-90 -mt-10">c</h1>
@@ -28,16 +28,13 @@ const Services = () => {
         <h1 className="-rotate-90 -mt-10">r</h1>
         <h1 className="-rotate-90 -mt-10">u</h1>
         <h1 className="-rotate-90 -mt-10">O</h1>
-<<<<<<< HEAD
       </div>
-      <div className="servicesList w-5/6 ml-10 overflow-y-scroll flex flex-row justify-center flex-wrap gap-4 ">
+      {/* <div className="servicesList w-5/6 ml-10 overflow-y-scroll flex flex-row justify-center flex-wrap gap-4 ">
         <div className="p-7 pb-5 bg-black text-white w-52 h-64">
-=======
       </div> */}
-      <h1 className="text-7xl md:text-9xl pb-8">Our <span className="SerifDisplayFont">Services</span></h1>
+      {/* <h1 className="text-7xl md:text-9xl pb-8">Our <span className="SerifDisplayFont">Services</span></h1> */}
       <div className="servicesList grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         <div className="p-5 pb-5 bg-black text-white w-52 h-64">
->>>>>>> c650a78ad8fac2b0766772dc25f252805e14418e
           <div className="flex flex-row justify-between">
             <p className="text-lg font-semibold -mt-3 w-36 mb-4 pt-2 leading-5 uppercase">
               Social media marketing
