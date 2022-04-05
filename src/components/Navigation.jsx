@@ -28,7 +28,7 @@ const Navigation = () => {
           <Link to="/" className="hover-underline-animation">
             CAREER
           </Link>
-          <Link to="/" className="hover-underline-animation">
+          <Link to="/contact" className="hover-underline-animation">
             CONTACT
           </Link>
         </div>
@@ -75,7 +75,7 @@ const Navigation = () => {
               <Link to="/" className="hover-underline-animation2">
                 CAREER
               </Link>
-              <Link to="/" className="hover-underline-animation2">
+              <Link to="/contact" className="hover-underline-animation2">
                 CONTACT
               </Link>
             </div>

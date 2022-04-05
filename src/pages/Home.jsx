@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com'
 import React, { useState } from "react";
 import Textra from "react-textra";
 import Circletext from "../components/Circletext";
@@ -26,10 +27,21 @@ import Services from "../components/Services";
 import ooo from "../assets/ooo_logo.png";
 import Comingsoon from "../components/Comingsoon";
 import FeaturedWork from "../components/FeaturedWork";
+import InstaFeeds from '../components/InstaFeeds';
+import Cards from '../components/Cards'
+import TypeWriterEffect from 'react-typewriter-effect';
+
 
 const Home = () => {
+  //emailjs
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_yx0ztt7', 'template_2ajhc9p', e.target, 'c-xKwcaHuwJG9-S7C')
+      .then(res => {
+        console.log(res);
+      }).catch(err => console.log(err));
+  };
   const { height, width } = useWindowDimensions();
-
   const settings = {
     dots: false,
     infinite: true,
@@ -91,8 +103,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className="slide-marquee px-6 md:px-10 h-3/6">
+      <div className="slide-marquee">
         <Marquee
           className="text-base md:text-xl lg:text-2xl xl:text-2xl pb-2 items-start"
           gradient={false}
@@ -105,11 +116,24 @@ const Home = () => {
           • FEATURED • FEATURED • FEATURED • FEATURED • FEATURED • FEATURED •
           FEATURED • FEATURED • FEATURED •{" "}
         </Marquee>
-        <FeaturedWork/>
-        {/* <Slide /> */}
+        <Slide />
       </div>
-      <div className="my-8">
-        <Services />
+      <div className="my-20">
+        {/* <Services /> */}
+        <TypeWriterEffect
+          textStyle={{
+            fontFamily: 'Red Hat Display',
+            textAlign: 'center',
+            fontWeight: 'bold',
+            fontSize: '75px',
+            marginBottom: '20px'
+          }}
+          startDelay={100}
+          cursorColor="black"
+          text="OUR SERVICES"
+          typeSpeed={100}
+        />
+        <Cards />
       </div>
       <div className=" flex flex-row items-center md:gap-x-10 justify-start md:justify-between md:items-end mx-6 md:mx-10 mt-24 flex-wrap">
         <div className="flex flex-col">
@@ -275,17 +299,26 @@ const Home = () => {
         </div>
       </div>
       <div className="px-6 md:px-10 py-10 md:py-20 lg:py-34 flex flex-row justify-center">
-        <form className="LandingForm flex flex-col items-center text-lg">
-          <input type="text" placeholder="Enter email address"></input>
-          <input type="text" placeholder="Let's talk!"></input>
-          <div
-            style={{ backgroundColor: "#DEFF00" }}
+        <form onSubmit={sendEmail} className="LandingForm flex flex-col items-center text-lg">
+          <input type="text" id='input1' placeholder="Enter email address" name='email' required></input>
+          <input type="text" id='input2' placeholder="Let's talk!" name='message' required></input>
+          {/* <div
+            
+              style={{ backgroundColor: "#DEFF00" }}
+              className="uppercase absolue px-5 py-3 bottom-0 cursor-pointer hover:-rotate-3 shadow-md"
+            >
+              get in touch
+            </div> */}
+          <button
+            style={{ backgroundColor: "#f2f626", marginTop: '30px' }}
             className="uppercase absolue px-5 py-3 bottom-0 cursor-pointer hover:-rotate-3 shadow-md"
+            type="submit"
           >
             get in touch
-          </div>
+          </button>
         </form>
       </div>
+      {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={8}/>       */}
       <div className="workTogether my-10 -ml-20">
         <Marquee
           className="text-xl md:text-2xl lg:text-4xl xl:text-5xl pb-2 items-start"
@@ -311,3 +344,17 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

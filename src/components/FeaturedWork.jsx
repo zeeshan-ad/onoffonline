@@ -7,7 +7,7 @@ function FeaturedWork() {
   return (
     <div>
       <div className="flex flex-row ">
-        <img src={hm} alt="Hunkemollar Featured Work" className="" />
+        <img src={hm} alt="Hunkemollar Featured Work" className=" " />
       </div>
     </div>
   );

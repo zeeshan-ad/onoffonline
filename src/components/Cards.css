@@ -1,0 +1,104 @@
+.content {
+  display: grid;
+  padding: 2em;
+  height: 100vh;
+  width: 85vw;
+  /* flex: 0.75; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
+.cards {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: grid;
+  column-gap: 3em;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 40em;
+  padding: 0.5em;
+  padding-bottom: 1.5em; */
+  /* border-radius: 0.5em; */
+  flex: 1;
+  background: #f7f7f6;
+  /* box-shadow: 0 0 1em rgba(0, 0, 0, 0.1); */
+  letter-spacing: 1px;
+
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.card:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.card:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.card:nth-child(4) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-right: 0;
+}
+
+.card:nth-child(5) {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+/* .card:nth-child(6){
+  grid-column-start: 6;
+  grid-column-end: 7;
+} */
+
+.fa-ellipsis-h {
+  color: #c4c4c4;
+  align-self: flex-end;
+  margin-right: 1em;
+}
+
+.card_image:hover {
+  cursor: url(//marketsquare.dk/wp-content/themes/marketsquare/dest/images/mousesite.svg) 12 12, auto;
+  transition: 0.1s;
+
+
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: radial-gradient(81.85% 81.85% at 49.99% 18.15%, #18191b 0%, #d0ced6 100%); */
+  /* margin: -11px -6px 0px -6px; */
+  /* transform:scale(1.1); */
+  color: #FFFFFF;
+  border-radius: 50%;
+}
+.cards1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: grid;
+  column-gap: 3em;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+
+
+
+
