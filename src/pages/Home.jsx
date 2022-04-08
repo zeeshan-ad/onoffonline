@@ -136,7 +136,8 @@ const Home = () => {
         <div
           className="px-6 md:px-10 flex flex-row justify-between"
         >
-          <div className="text-8xl w-1/6 self-center">
+          <div className='our_services'>
+          <div className="text-8xl w-1/2 self-center">
             <h1 className="-rotate-90">s</h1>
             <h1 className="-rotate-90 -mt-10">e</h1>
             <h1 className="-rotate-90 -mt-10">c</h1>
@@ -149,6 +150,7 @@ const Home = () => {
             <h1 className="-rotate-90 -mt-10">r</h1>
             <h1 className="-rotate-90 -mt-10">u</h1>
             <h1 className="-rotate-90 -mt-10">O</h1>
+          </div>
           </div>
           <Cards />
         </div>

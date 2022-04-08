@@ -1,7 +1,7 @@
 .content {
   display: grid;
   padding: 2em;
-  height: 100vh;
+  height: 80vh;
   width: 85vw;
   /* flex: 0.75; */
   position: absolute;
