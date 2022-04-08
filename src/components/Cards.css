@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center; 
   /* height: 40em;
   padding: 0.5em;
   padding-bottom: 1.5em; */
@@ -74,7 +74,7 @@
 }
 
 .card_image:hover {
-  cursor: url(//marketsquare.dk/wp-content/themes/marketsquare/dest/images/mousesite.svg) 12 12, auto;
+  cursor: url(../assets/cursor_.png) ,auto;
   transition: 0.1s;
 
 
@@ -85,6 +85,7 @@
   color: #FFFFFF;
   border-radius: 50%;
 }
+
 .cards1 {
   grid-column-start: 1;
   grid-column-end: 5;
